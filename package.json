@@ -1,0 +1,19 @@
+{
+  "name": "alfy-dev-notes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "alfy": "^0.9.1"
+  },
+  "devDependencies": {
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.startcase": "^4.4.0"
+  },
+  "scripts": {
+    "build": "yarn run cp:index && yarn run cp:data && yarn run cp:pkg",
+    "cp:index": "cp index.js '/Users/dennis.okeeffe/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.1BB43772-78E4-4530-8822-2A9206F7EDF3'",
+    "cp:data": "cp data.json '/Users/dennis.okeeffe/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.1BB43772-78E4-4530-8822-2A9206F7EDF3'",
+    "cp:pkg": "cp package.json '/Users/dennis.okeeffe/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.1BB43772-78E4-4530-8822-2A9206F7EDF3'"
+  }
+}
